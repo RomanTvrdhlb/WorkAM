@@ -1,0 +1,35 @@
+.main-title{
+color:  rgba(var(--cl-a),1.0);
+font-family: var(--font-family);
+font-size: 44px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+display: flex;
+flex-direction: column;
+grid-gap: 13px;
+
+    span{
+    font-size: 33px;
+    font-weight: 700;
+    }
+}
+
+.main-pretitle{
+color: rgba(var(--cl-a),1.0);
+font-family: var(--font-family);
+font-size: 33px;
+font-weight: 700;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+text-align: left;
+font-style: normal;
+letter-spacing: normal;
+line-height: normal;
+}

@@ -1,0 +1,20 @@
+<header class="header fixed-block">
+
+    <div class="container">
+      <div class="header-box">
+            @include('../partials/components/header-logo.html',{
+              'ClassName':'header__logo',
+              'Link':'index.html',
+              'IconName':'logo.png',
+              'IconWidth':'364',
+              'IconHeight':'52'
+            })
+
+            @include('../partials/components/main-nav.html',
+            {'classMode':'header-box__nav'})
+
+            <button class="main-button">Приєднатись</button>
+
+      </div>
+    </div>
+</header>

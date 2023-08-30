@@ -1,0 +1,63 @@
+// --------------- hex to rgba mixin ---------------
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+:root {
+// --------------- default global variable ---------------
+  --body-bg: #ffffff;
+  --body-font-size: 16px;
+  --content-width: 1280px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+// --------------- default JS variable ---------------
+  --header-height: 89px;
+// --------------- default JS tablet variable ---------------
+  @media (max-width: 1024px) {
+    --header-height: 75px;
+  }
+
+// --------------- default scroll variable ---------------
+  --scrollbar-thumb: #89bd08;
+  --scrollbar-thumb-hover: #89bd08;
+  --scrollbar-track:  #f0f0f0;
+  --scrollbar-track-hover:#f0f0f0;
+  --overlay-bg: rgba(0, 0, 0, 0.5);
+
+// --------------- default font-family variable ---------------
+  --font-family: "DecimaNova" , sans-serif; // var(--font-family);
+// --------------- default text color variable ---------------
+  --cl-a: #{HexToRGB(#ffffff)}; // rgba(var(--cl-a),1.0);
+  --cl-b: #{HexToRGB(#000000)}; // rgba(var(--cl-b),1.0);
+  --cl-c: #{HexToRGB(#89bd08)}; // rgba(var(--cl-c),1.0);
+
+
+  
+  --cl-d: #{HexToRGB(#1E47B0)}; // rgba(var(--cl-d),1.0);
+  --cl-e: #{HexToRGB(#333333)}; // rgba(var(--cl-e),1.0);
+  --cl-f: #{HexToRGB(#275efe)}; // rgba(var(--cl-f),1.0);
+  --cl-g: #{HexToRGB(#1D252D)}; // rgba(var(--cl-g),1.0);
+  --cl-h: #{HexToRGB(#BBBBBB)}; // rgba(var(--cl-h),1.0);
+
+// --------------- default background cl variable ---------------
+  --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
+  --bg-b: #{HexToRGB(#000000)}; // rgba(var(--bg-b),1.0);
+  --bg-c: #{HexToRGB(#1E47B0)}; // rgba(var(--bg-c),1.0);
+  --bg-d: #{HexToRGB(#1D252D)}; // rgba(var(--bg-d),1.0);
+  --bg-e: #{HexToRGB(#C5C5C5)}; // rgba(var(--bg-e),1.0);
+  --bg-f: #{HexToRGB(#546DB3)}; // rgba(var(--bg-f),1.0);
+
+// --------------- default border cl variable ---------------
+  --br-a: #C5C5C5; // var(--br-a);
+  --br-b: #1E47B0; // var(--br-b);
+
+// --------------- gradient background cl variable ---------------
+  --gradient-a: linear-gradient(180deg, rgba(104, 102, 246, 0) 0%, rgba(104, 102, 246, 0.1) 100%);
+// --------------- svg fill cl variable ---------------
+--svg-fill-a: #ffffff; // var(--svg-fill-a);
+--svg-fill-b: #FEC200; // var(--svg-fill-b);
+--svg-fill-c: #2D74FF; // var(--svg-fill-c);
+--svg-fill-d: #C4C4C4; // var(--svg-fill-d);
+--svg-fill-e: #1D252D; // var(--svg-fill-e);
+--svg-fill-f: #1E47B0; // var(--svg-fill-f);
+}
